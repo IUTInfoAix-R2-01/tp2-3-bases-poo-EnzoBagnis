@@ -6,3 +6,5 @@ Ne pas modifier ce fichier.
 - la présence du fichier caché <code>.classpath</code>
 
 Les fichiers sources, qui répondent au sujet, doivent tous être rangés dans le dossier principal, sans sous-dossiers.
+
+Ce fichier a été modifié par Enzo Bagnis
