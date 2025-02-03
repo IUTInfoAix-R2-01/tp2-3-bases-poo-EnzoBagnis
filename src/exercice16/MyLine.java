@@ -5,10 +5,8 @@ public class MyLine {
 	private MyPoint end;
 	
 	public MyLine(int x1, int y1, int x2, int y2) {
-		this.begin.setX(x1);
-		this.begin.setY(y1);
-		this.end.setX(x2);
-		this.end.setY(y2);
+	    this.begin = new MyPoint(x1, y1);
+	    this.end = new MyPoint(x2, y2);
 	}
 	
 	public MyLine(MyPoint begin, MyPoint end) {
@@ -61,8 +59,9 @@ public class MyLine {
 	}
 	
 	public void setEndY(int y) {
-		this.begin.setX(y); 
+	    this.end.setY(y); 
 	}
+
 	
 	public int[] getBeginXY() {
 		int [] arr = this.begin.getXY();
