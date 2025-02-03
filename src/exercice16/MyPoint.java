@@ -46,15 +46,19 @@ public class MyPoint {
 	}
 	
 	public double distance(int x, int y) {
-		return x - this.x + y - this.y;
+	    int xDiff = this.x - x;
+	    int yDiff = this.y - y;
+	    return Math.sqrt(xDiff * xDiff + yDiff * yDiff);
 	}
 	
 	public double distance(MyPoint another) {
-		return   another.getX() - this.x + another.getY() - this.y;
+	    int xDiff = this.x - another.x;
+	    int yDiff = this.y - another.y;
+	    return Math.sqrt(xDiff * xDiff + yDiff * yDiff);
 	}
 	
 	public double distance() {
-		return this.x - 0 + this.y - 0;
+	    return Math.sqrt(this.x * this.x + this.y * this.y);
 	}
 	
 	
