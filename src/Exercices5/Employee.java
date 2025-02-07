@@ -50,7 +50,8 @@ public class Employee {
 	}
 
 	public int raiseSalary(int percent) {
-		return salary * percent;
+		salary = salary + (salary * percent/100);
+		return salary;
 	}
 
 	public String toString() {
